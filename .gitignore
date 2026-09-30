@@ -1,0 +1,30 @@
+# ROS 2 y colcon
+build/
+install/
+log/
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Editores
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Archivos temporales
+*.log
+*.tmp
+*.bak
+
+# ROS bags
+*.bag
+*.db3
+*.mcap
+
+# Sistema
+.DS_Store
+Thumbs.db
+
