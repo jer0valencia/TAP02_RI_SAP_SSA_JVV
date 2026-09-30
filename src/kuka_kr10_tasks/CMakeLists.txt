@@ -177,7 +177,22 @@ ament_target_dependencies(
   moveit_core
   moveit_ros_planning_interface
 )
+# ============================================================================
+# EJECUTABLE: jacobian_check
+# ============================================================================
 
+add_executable(
+  jacobian_check
+  src/jacobian_check.cpp
+)
+
+ament_target_dependencies(
+  jacobian_check
+
+  rclcpp
+  moveit_core
+  moveit_ros_planning_interface
+)
 
 # ============================================================================
 # INSTALACIÓN DE LOS EJECUTABLES C++
@@ -185,7 +200,7 @@ ament_target_dependencies(
 
 install(
   TARGETS
-
+    jacobian_check
     create_environment
     evaluate
     cartesian_path
