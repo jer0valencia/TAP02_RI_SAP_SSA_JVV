@@ -368,7 +368,11 @@ Los movimientos cartesianos calculan automáticamente:
 - Aceleraciones articulares.
 
 ---
+Para revisar el jacobiano desde rviz eliges el goal state qeu quieres y corres
 
+---
+ros2 run kuka_kr10_task jacobian check
+---
 # Estructura del Proyecto
 
 ```text
